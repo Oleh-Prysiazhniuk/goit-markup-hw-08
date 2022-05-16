@@ -1,0 +1,43 @@
+.works__button-items {
+    justify-content: center;
+    display: flex;
+}
+
+.works__button-item {
+    margin-right: 8px;
+
+      &:last-child {
+            margin-right: 0;
+        }
+}
+
+
+
+.works__button-primery {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    border-radius: 4px;
+    border-width: 0;
+    padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works__button-primery {
+    background-color: var(--secondary-bg-color);
+
+        &:hover,
+        &:focus {
+            color: var(--text-title-color);
+            background-color: var(--accent-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+

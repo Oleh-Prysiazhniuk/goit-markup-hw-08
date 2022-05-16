@@ -1,0 +1,48 @@
+.section--no-padding-top {
+    padding-top: 0;
+}
+
+.work {
+    display: flex;
+    margin-top: 50px;
+}
+
+.work__item {
+    position: relative;
+    margin-right: 30px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+}
+
+
+
+.section__tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.work__description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(47, 48, 58, 0.8);
+    left: 0;
+    bottom: 0;
+}
