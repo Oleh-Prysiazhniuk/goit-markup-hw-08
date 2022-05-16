@@ -55,7 +55,7 @@
         </div>
      </section>
      <!--фішки-особливості компанії-->
-     <!-- <section class="section ">
+     <section class="section">
       <div class="container">
        <h2 class="visually-hidden">Наши преимущества</h2>
        <ul class="features list">
@@ -97,9 +97,9 @@
          </li>
         </ul>
       </div>
-     </section> -->
+     </section>
      <!--діяльність компанії-->
-     <!-- <section class="section section--no-padding-top">
+     <section class="section section--no-padding-top">
       <div class="container">
         <h2 class="section__tittle">Чем мы занимаемся</h2>
         <ul class="work list">
@@ -114,14 +114,19 @@
           </li>
         </ul>
       </div>
-     </section> -->
+     </section>
      <!--члени компанії-->
-     <!-- <section class="section section--background-color">
+    <section class="section section--background-color">
       <div class="container">
         <h2 class="section__tittle">Наша команда</h2>
         <ul class="user list">
             <li class="user__item">
-                <img src="./images/igor.jpg" alt="фото Игорь Демьяненко" width="270">
+                <img srcset="
+                                  ./images/img-min.jpg    270w,
+                                  ./images/img@2x-min.jpg 520w,
+                                  ./images/img@3x-min.jpg 810w
+                                " src="./images/img-min.jpg" alt="фотография"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw" />
               <div class="user__person-description">
                 <h3 class="user__tittle">Игорь Демьяненко</h3>
                 <p class="user__text">Product Designer</p>
@@ -158,7 +163,12 @@
               </div>
               </li>
             <li class="user__item">
-                <img src="./images/olga.jpg" alt="фото Ольга Репина" width="270">
+                              <img srcset="
+                                                ./images/img-min-1.jpg    270w,
+                                                ./images/img@2x-min-1.jpg 520w,
+                                                ./images/img@3x-min-1.jpg 810w
+                                              " src="./images/img-min-1.jpg" alt="фотография"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw" />
               <div class="user__person-description">
                 <h3 class="user__tittle">Ольга Репина</h3>
                 <p class="user__text">Frontend Developer</p>
@@ -195,7 +205,12 @@
               </div>
               </li>
             <li class="user__item">
-                <img src="./images/kolya.jpg" alt="фото Николай Тарасов" width="270">
+                              <img srcset="
+                                                ./images/img-min-1-2.jpg    270w,
+                                                ./images/img@2x-min-1-2.jpg 520w,
+                                                ./images/img@3x-min-1-2.jpg 810w
+                                              " src="./images/img-min-1-2.jpg" alt="фотография"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw" />
               <div class="user__person-description">
                 <h3 class="user__tittle">Николай Тарасов</h3>
                 <p class="user__text">Marketing</p>
@@ -232,7 +247,12 @@
               </div>
               </li>
             <li class="user__item">
-                <img src="./images/misha.jpg" alt="фото Михаил Ермаков" width="270">
+                              <img srcset="
+                                                ./images/img-min-1-2-3.jpg    270w,
+                                                ./images/img@2x-min-1-2-3.jpg 520w,
+                                                ./images/img@3x-min-1-2-3.jpg 810w
+                                              " src="./images/img-min-1-2-3.jpg" alt="фотография"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw" />
               <div class="user__person-description">
                 <h3 class="user__tittle">Михаил Ермаков</h3>
                 <p class="user__text">UI Designer</p>
@@ -270,9 +290,9 @@
               </li>
         </ul>
       </div>
-      </section> -->
+      </section>
       <!--постійні клієнти-->
-      <!-- <section class="section">
+        <section class="section section_adaptive">
         <div class="container">
           <h2 class="section__tittle">Постоянные клиенты</h2>
           <ul class="clients">
@@ -320,7 +340,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 <!--футер-->
  <!-- <footer class="footer">
@@ -437,5 +457,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
