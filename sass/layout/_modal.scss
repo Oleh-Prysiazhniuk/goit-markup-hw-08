@@ -161,9 +161,17 @@
     display: block;
     text-align: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 1.71;
     color: var(--secondory-text-color);
+
+    @media screen and (min-width: 450px) {
+            font-size: 12px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
 }
 
 .modal__form-icon-check {
@@ -190,6 +198,7 @@
 }
 
 .modal__form-link {
+    display: inline-block;
     color: var(--accent-color);
 }
 

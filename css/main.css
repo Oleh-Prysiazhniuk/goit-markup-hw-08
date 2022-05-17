@@ -1080,16 +1080,42 @@ a {
   }
 }
 
-.works__button-items {
-  justify-content: center;
-  display: flex;
+.works {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.works__button-item {
+.works__button-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .works__button-items {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works__button-items {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.works__button-items .works__button-item:not(:last-child) {
   margin-right: 8px;
 }
-.works__button-item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 767.99px) {
+  .works__button-items .works__button-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .works__button-primery {
@@ -1117,9 +1143,14 @@ a {
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .portfolio__img {
@@ -1129,16 +1160,23 @@ a {
 }
 
 .portfolio__project-item {
-  margin-top: 30px;
-  margin-right: 30px;
   background-color: var(--primary-bg-color);
   cursor: pointer;
 }
-.portfolio__project-item:nth-child(-n+3) {
-  margin-top: 0px;
+@media screen and (max-width: 767.98px) {
+  .portfolio__project-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-.portfolio__project-item:nth-child(3n+3) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .portfolio__project-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__project-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio__projects-description {
@@ -1153,6 +1191,10 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+}
+
+.portfolio__headline-another {
+  font-size: 17px;
 }
 
 .portfolio__tagline {
@@ -1177,26 +1219,43 @@ a {
 }
 
 .portfolio__overlay-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+  position: absolute;
+  height: 100%;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  position: absolute;
-  width: 370px;
-  height: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
   left: 0;
   bottom: -101%;
   transition: 250ms linear;
   background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
   transition: left 250ms cubic-bezier(0.4, 0, 0.2, 1), bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__project-hover:hover .portfolio__overlay-text, .portfolio__project-hover:focus .portfolio__overlay-text {
   left: 0;
   bottom: 0;
+}
+@media screen and (max-width: 479.98px) {
+  .portfolio__overlay-text {
+    display: flex;
+    align-items: center;
+    padding: 48px 24px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__overlay-text {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__overlay-text {
+    padding: 63px 24px;
+  }
 }
 
 .is-hidden {
@@ -1354,9 +1413,19 @@ a {
   display: block;
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.71;
   color: var(--secondory-text-color);
+}
+@media screen and (min-width: 450px) {
+  .modal__form-contract {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__form-contract {
+    font-size: 14px;
+  }
 }
 
 .modal__form-icon-check {
@@ -1381,6 +1450,7 @@ a {
 }
 
 .modal__form-link {
+  display: inline-block;
   color: var(--accent-color);
 }
 
