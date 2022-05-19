@@ -370,6 +370,7 @@ ol {
 @media screen and (min-width: 768px) {
   .header__menu-btn {
     display: none;
+    position: fixed;
   }
 }
 
@@ -1205,6 +1206,19 @@ a {
 }
 .portfolio__project-hover:hover, .portfolio__project-hover:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) and (max-width: 1199.97px) {
+  .portfolio__project-hover {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.97px) {
+  .portfolio__projects-description-another {
+    flex-grow: 1;
+  }
 }
 
 .portfolio__overlay {

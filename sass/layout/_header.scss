@@ -282,17 +282,17 @@
     color: var(--accent-color);
 }
 
-
 .header__menu-btn {
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-
+    
     cursor: pointer;
 
     z-index: 4;
+
 
     .header__icon-close {
         display: none;
@@ -308,6 +308,7 @@
 
     @media screen and (min-width: 768px) {
         display: none;
+        position: fixed;
     }
 }
 
