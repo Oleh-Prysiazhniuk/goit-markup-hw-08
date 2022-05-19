@@ -256,6 +256,15 @@ ol {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.97px) {
+  .header__item {
+    margin-bottom: 10px;
+  }
+  .header__item:last-child {
+    margin-bottom: 0px;
+  }
+}
+
 .header__item + .header__item {
   margin-left: 50px;
 }
@@ -300,11 +309,6 @@ ol {
 @media screen and (max-width: 767.98px) and (max-width: 380px) {
   .header__contact-link--font {
     font-size: 24px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199.97px) {
-  .header__contact-link--font {
-    margin-top: 10px;
   }
 }
 
@@ -481,6 +485,9 @@ ol {
   .features__item {
     margin-bottom: 30px;
   }
+  .features__item:last-child {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -543,7 +550,6 @@ ol {
 
 .work {
   display: flex;
-  margin-top: 50px;
 }
 
 .work__item {
@@ -817,7 +823,7 @@ ol {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -825,6 +831,7 @@ ol {
     align-items: baseline;
     flex-direction: row;
     margin-bottom: 0;
+    margin-right: 93px;
   }
 }
 
@@ -850,11 +857,6 @@ ol {
 @media screen and (max-width: 767px) {
   .footer__logo-position {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__logo-position {
-    margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -938,7 +940,6 @@ a {
   .footer__join {
     display: block;
     margin-left: 70px;
-    margin-right: 93px;
   }
 }
 
@@ -1142,9 +1143,6 @@ a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio {
-  margin-top: 50px;
-}
 @media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
@@ -1191,10 +1189,6 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-}
-
-.portfolio__headline-another {
-  font-size: 17px;
 }
 
 .portfolio__tagline {

@@ -20,17 +20,19 @@
 .footer__content {
     margin-bottom: 60px;
 
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
         flex-direction: row;
         margin-bottom: 0;
+        margin-right: 93px;
     }
 }
 
@@ -57,13 +59,9 @@
         margin-bottom: 60px;
     }
 
-    @media screen and (min-width: 768px) {
-        margin-right: 165px;
-    }
 
     @media screen and (min-width: 1200px) {
         display: block;
-
         margin-right: 0;
     }
 }
@@ -140,7 +138,6 @@ a {
     @media screen and (min-width: 1200px) {
         display: block;
         margin-left: 70px;
-        margin-right: 93px;
     }
 }
 

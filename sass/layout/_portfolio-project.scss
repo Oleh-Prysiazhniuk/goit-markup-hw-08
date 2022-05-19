@@ -1,5 +1,4 @@
 .portfolio {
-    margin-top: 50px;
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -44,9 +43,9 @@
     color: var(--primary-text-color);
 }
 
-.portfolio__headline-another {
-    font-size: 17px;
-}
+// .portfolio__headline-another {
+//     font-size: 17px;
+// }
 
 .portfolio__tagline {
     font-size: 16px;
@@ -66,9 +65,20 @@
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+
+        // @media screen and (min-width: 768px) and (max-width: 1199.97px) {
+        
+        // height: 100%;
+        // }
 }
 
-
+// .portfolio__projects-description-another {
+//             @media screen and (min-width: 768px) and (max-width: 1199.97px) {
+                
+//                 height: 146px;
+//                 }
+    
+// }
 
 
 .portfolio__overlay {

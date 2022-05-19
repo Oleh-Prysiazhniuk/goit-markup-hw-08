@@ -179,6 +179,16 @@
     }
 }
 
+
+.header__item {
+        @media screen and (min-width: 768px) and (max-width: 1199.97px) {
+                margin-bottom: 10px;
+                &:last-child {
+                margin-bottom: 0px;
+                }
+            }
+}
+
 .header__item+.header__item {
     margin-left: 50px;
 
@@ -227,9 +237,6 @@
         margin-bottom: 32px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199.97px) {
-        margin-top: 10px;
-    }
 }
 
 .header__icon {
