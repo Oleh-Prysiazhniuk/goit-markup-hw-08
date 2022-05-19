@@ -50,14 +50,14 @@
         <li class="header__item">
           <a href="mailto:info@devstudio.com" class="header__contact-link"><svg class="header__icon-mail" width="16"
               height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
+              <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
             </svg>
             info@devstudio.com</a>
         </li>
         <li class="header__item">
           <a href="tel:+380961111111" class="header__contact-link header__contact-link--font"><svg
               class="header__icon-phone" width="10" height="16">
-              <use href="./images/icons.svg#icon-phone"></use>
+              <use href="./images/symbol-defs.svg#icon-Vector"></use>
             </svg>
             +38 096 111 11 11</a>
         </li>
@@ -145,13 +145,37 @@
       <div class="container">
         <h2 class="section__tittle">Чем мы занимаемся</h2>
         <ul class="work list">
-          <li class="work__item"><img src="./images/img11.jpg" alt="робота с ПК" width="370">
+          <li class="work__item">
+
+                                <picture class="cards__img">
+                                  <source media="(min-width: 1200px)"
+                                    srcset="./images/img-1-pc-1x-min.png 1x, ./images/img-1-pc-2x-min.png 2x, ./images/img-1-pc-3x-min.png 3x"
+                                    type="image/jpeg" />
+                                  <img src="./images/img-1-pc-1x-min.png" alt="img-pc">
+                                </picture>
+
             <p class="work__description">Десктопные приложения</p>
           </li>
-            <li class="work__item"><img src="./images/img22.jpg" alt="Робота с телефоном" width="370">
+            <li class="work__item">
+
+                                <picture class="cards__img">
+                                  <source media="(min-width: 1200px)"
+                                    srcset="./images/img-2-pc-1x-min.png 1x, ./images/img-2-pc-2x-min.png 2x, ./images/img-2-pc-3x-min.png 3x"
+                                    type="image/jpeg" />
+                                  <img src="./images/img-2-pc-1x-min.png" alt="img-mob">
+                                </picture>
+
             <p class="work__description">Мобильные приложения</p>
           </li>
-            <li class="work__item"><img src="./images/img33.jpg" alt="робота с планшетом" width="370">
+            <li class="work__item">
+
+                                <picture class="cards__img">
+                                  <source media="(min-width: 1200px)"
+                                    srcset="./images/img-3-pc-1x-min.png 1x, ./images/img-3-pc-2x-min.png 2x, ./images/img-3-pc-3x-min.png 3x"
+                                    type="image/jpeg" />
+                                  <img src="./images/img-3-pc-1x-min.png" alt="img-tab">
+                                </picture>
+
             <p class="work__description">Дизайнерские решения</p>
           </li>
         </ul>
@@ -163,14 +187,20 @@
         <h2 class="section__tittle">Наша команда</h2>
         <ul class="user list">
             <li class="user__item">
-                <img srcset="
-                  ./images/img-min.jpg    270w,
-                  ./images/img@2x-min.jpg 520w,
-                  ./images/img@3x-min.jpg 810w"
-                   src="./images/img-min.jpg"
-                   alt="фотография"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="cards__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/Igor-mob-1x-min.jpg 1x, ./images/Igor-mob-2x-min.jpg 2x, ./images/Igor-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/Igor-tab-1x-min.jpg 1x, ./images/Igor-tab-2x-min.jpg 2x, ./images/Igor-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/Igor-pc-1x-min.jpg 1x, ./images/Igor-pc-2x-min.jpg 2x, ./images/Igor-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/Igor-pc-1x-min.jpg" alt="photo-Igor">
+                    </picture>
+
               <div class="user__person-description">
                 <h3 class="user__tittle">Игорь Демьяненко</h3>
                 <p class="user__text">Product Designer</p>
@@ -207,14 +237,20 @@
               </div>
               </li>
             <li class="user__item">
-                <img srcset="
-                ./images/img-min-1.jpg    270w,
-                ./images/img@2x-min-1.jpg 520w,
-                ./images/img@3x-min-1.jpg 810w"
-                 src="./images/img-min-1.jpg"
-                 alt="фотография"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                />
+
+                    <picture class="cards__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/Olga-mob-1x-min.jpg 1x, ./images/Olga-mob-2x-min.jpg 2x, ./images/Olga-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/Olga-tab-1x-min.jpg 1x, ./images/Olga-tab-2x-min.jpg 2x, ./images/Olga-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/Olga-pc-1x-min.jpg 1x, ./images/Olga-pc-2x-min.jpg 2x, ./images/Olga-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/Olga-pc-1x-min.jpg" alt="photo-Olga">
+                    </picture>
+
               <div class="user__person-description">
                 <h3 class="user__tittle">Ольга Репина</h3>
                 <p class="user__text">Frontend Developer</p>
@@ -251,14 +287,20 @@
               </div>
               </li>
             <li class="user__item">
-                <img srcset="
-                 ./images/img-min-1-2.jpg    270w,
-                  ./images/img@2x-min-1-2.jpg 520w,
-                  ./images/img@3x-min-1-2.jpg 810w"
-                   src="./images/img-min-1-2.jpg"
-                   alt="фотография"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="cards__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/Kolya-mob-1x-min.jpg 1x, ./images/Kolya-mob-2x-min.jpg 2x, ./images/Kolya-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/Kolya-tab-1x-min.jpg 1x, ./images/Kolya-tab-2x-min.jpg 2x, ./images/Kolya-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/Kolya-pc-1x-min.jpg 1x, ./images/Kolya-pc-2x-min.jpg 2x, ./images/Kolya-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/Kolya-pc-1x-min.jpg" alt="photo-Kolya">
+                    </picture>
+
               <div class="user__person-description">
                 <h3 class="user__tittle">Николай Тарасов</h3>
                 <p class="user__text">Marketing</p>
@@ -297,23 +339,14 @@
             <li class="user__item">
 
                     <picture class="cards__img">
-                      <source media="(max-width: 767px)" srcset="./images/mob-1x.jpg 1x, ./images/mob-2x.jpg 2x, ./images/mob-3x.jpg 3x"
+                      <source media="(max-width: 767px)" srcset="./images/Misha-mob-1x-min.jpg 1x, ./images/Misha-mob-2x-min.jpg 2x, ./images/Misha-mob-3x-min.jpg 3x"
                         type="image/jpeg" />
-                      <source media="(max-width: 1199px)" srcset="./images/tab-1x.jpg 1x, ./images/tab-2x.jpg 2x, ./images/tab-3x.jpg 3x"
+                      <source media="(max-width: 1199px)" srcset="./images/Misha-tab-1x-min.jpg 1x, ./images/Misha-tab-2x-min.jpg 2x, ./images/Misha-tab-3x-min.jpg 3x"
                         type="image/jpeg" />
-                      <source media="(min-width: 1200px)" srcset="./images/img-min-1-2-3.jpg 1x, ./images/img@2x-min-1-2-3.jpg 2x, ./images/img@3x-min-1-2-3.jpg 3x"
+                      <source media="(min-width: 1200px)" srcset="./images/Misha-pc-1x-min.jpg 1x, ./images/Misha-pc-2x-min.jpg 2x, ./images/Misha-pc-3x-min.jpg 3x"
                         type="image/jpeg" />
-                      <img src="./images/img-min-1-2-3" alt="Технокряк">
+                      <img src="./images/Misha-pc-1x-min.jpg" alt="photo-Misha">
                     </picture>
-
-                <!-- <img srcset="
-                ./images/img-min-1-2-3.jpg    270w,
-                ./images/img@2x-min-1-2-3.jpg 520w,
-                ./images/img@3x-min-1-2-3.jpg 810w"
-                 src="./images/img-min-1-2-3.jpg"
-                 alt="фотография"
-                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
-                /> -->
 
               <div class="user__person-description">
                 <h3 class="user__tittle">Михаил Ермаков</h3>

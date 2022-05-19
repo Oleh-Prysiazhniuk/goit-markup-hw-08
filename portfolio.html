@@ -50,14 +50,14 @@
         <li class="header__item">
           <a href="mailto:info@devstudio.com" class="header__contact-link"><svg class="header__icon-mail" width="16"
               height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
+              <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
             </svg>
             info@devstudio.com</a>
         </li>
         <li class="header__item">
           <a href="tel:+380961111111" class="header__contact-link header__contact-link--font"><svg
               class="header__icon-phone" width="10" height="16">
-              <use href="./images/icons.svg#icon-phone"></use>
+              <use href="./images/symbol-defs.svg#icon-Vector"></use>
             </svg>
             +38 096 111 11 11</a>
         </li>
@@ -115,16 +115,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                      <div class="portfolio__overlay">
-                        <img class="portfolio__img" 
-                        
-                      srcset="
-                      ./images/img1.jpg 370w,
-                      ./images/img1-x2.jpg 740w,
-                      ./images/img1-x3.jpg 1110w"
-                    src="./images/img1.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio1-mob-1x-min.jpg 1x, ./images/portfolio1-mob-2x-min.jpg 2x, ./images/portfolio1-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio1-tab-1x-min.jpg 1x, ./images/portfolio1-tab-2x-min.jpg 2x, ./images/portfolio1-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio1-pc-1x-min.jpg 1x, ./images/portfolio1-pc-2x-min.jpg 2x, ./images/portfolio1-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio1-pc-1x-min.jpg" alt="photo-portfolio1">
+                    </picture>
 
                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -138,16 +141,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                     <div class="portfolio__overlay">
-                       <img class="portfolio__img" 
-                       
-                       srcset="
-                      ./images/img2.jpg     370w,
-                      ./images/img2-x2.jpg  740w,
-                      ./images/img2-x3.jpg 1110w"
-                    src="./images/img2.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio2-mob-1x-min.jpg 1x, ./images/portfolio2-mob-2x-min.jpg 2x, ./images/portfolio2-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio2-tab-1x-min.jpg 1x, ./images/portfolio2-tab-2x-min.jpg 2x, ./images/portfolio2-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio2-pc-1x-min.jpg 1x, ./images/portfolio2-pc-2x-min.jpg 2x, ./images/portfolio2-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio2-pc-1x-min.jpg" alt="photo-portfolio2">
+                    </picture>
 
                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                        позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -161,16 +167,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                      <div class="portfolio__overlay">
-                       <img class="portfolio__img" 
-                       
-                       srcset="
-                      ./images/img3.jpg     370w,
-                      ./images/img3-x2.jpg  740w,
-                      ./images/img3-x3.jpg 1110w"
-                    src="./images/img3.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio3-mob-1x-min.jpg 1x, ./images/portfolio3-mob-2x-min.jpg 2x, ./images/portfolio3-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio3-tab-1x-min.jpg 1x, ./images/portfolio3-tab-2x-min.jpg 2x, ./images/portfolio3-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio3-pc-1x-min.jpg 1x, ./images/portfolio3-pc-2x-min.jpg 2x, ./images/portfolio3-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio3-pc-1x-min.jpg" alt="photo-portfolio3">
+                    </picture>
 
                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                        позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -184,16 +193,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                     <div class="portfolio__overlay">
-                     <img class="portfolio__img"
-                     
-                      srcset="
-                      ./images/img4.jpg     370w,
-                      ./images/img4-x2.jpg  740w,
-                      ./images/img4-x3.jpg 1110w"
-                    src="./images/img4.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio4-mob-1x-min.jpg 1x, ./images/portfolio4-mob-2x-min.jpg 2x, ./images/portfolio4-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio4-tab-1x-min.jpg 1x, ./images/portfolio4-tab-2x-min.jpg 2x, ./images/portfolio4-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio4-pc-1x-min.jpg 1x, ./images/portfolio4-pc-2x-min.jpg 2x, ./images/portfolio4-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio4-pc-1x-min.jpg" alt="photo-portfolio4">
+                    </picture>
 
                      <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                       позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -207,16 +219,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                     <div class="portfolio__overlay">
-                     <img class="portfolio__img" 
-                     
-                       srcset="
-                      ./images/img5.jpg     370w,
-                      ./images/img5-x2.jpg  740w,
-                      ./images/img5-x3.jpg 1110w"
-                    src="./images/img5.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio5-mob-1x-min.jpg 1x, ./images/portfolio5-mob-2x-min.jpg 2x, ./images/portfolio5-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio5-tab-1x-min.jpg 1x, ./images/portfolio5-tab-2x-min.jpg 2x, ./images/portfolio5-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio5-pc-1x-min.jpg 1x, ./images/portfolio5-pc-2x-min.jpg 2x, ./images/portfolio5-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio5-pc-1x-min.jpg" alt="photo-portfolio5">
+                    </picture>
 
                      <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -230,16 +245,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                     <div class="portfolio__overlay">
-                      <img class="portfolio__img"
-                      
-                       srcset="
-                      ./images/img6.jpg     370w,
-                      ./images/img6-x2.jpg  740w,
-                      ./images/img6-x3.jpg 1110w"
-                    src="./images/img6.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio6-mob-1x-min.jpg 1x, ./images/portfolio6-mob-2x-min.jpg 2x, ./images/portfolio6-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio6-tab-1x-min.jpg 1x, ./images/portfolio6-tab-2x-min.jpg 2x, ./images/portfolio6-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio6-pc-1x-min.jpg 1x, ./images/portfolio6-pc-2x-min.jpg 2x, ./images/portfolio6-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio6-pc-1x-min.jpg" alt="photo-portfolio6">
+                    </picture>
 
                       <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                       позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -253,16 +271,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                     <div class="portfolio__overlay">
-                      <img class="portfolio__img" 
 
-                       srcset="
-                      ./images/img7.jpg     370w,
-                      ./images/img7-x2.jpg  740w,
-                      ./images/img7-x3.jpg 1110w"
-                    src="./images/img7.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio7-mob-1x-min.jpg 1x, ./images/portfolio7-mob-2x-min.jpg 2x, ./images/portfolio7-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio7-tab-1x-min.jpg 1x, ./images/portfolio7-tab-2x-min.jpg 2x, ./images/portfolio7-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio7-pc-1x-min.jpg 1x, ./images/portfolio7-pc-2x-min.jpg 2x, ./images/portfolio7-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio7-pc-1x-min.jpg" alt="photo-portfolio7">
+                    </picture>
 
                       <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                       позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -276,16 +297,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                     <div class="portfolio__overlay">
-                     <img class="portfolio__img"
 
-                      srcset="
-                      ./images/img8.jpg     370w,
-                      ./images/img8-x2.jpg  740w,
-                      ./images/img8-x3.jpg 1110w"
-                    src="./images/img8.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio8-mob-1x-min.jpg 1x, ./images/portfolio8-mob-2x-min.jpg 2x, ./images/portfolio8-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio8-tab-1x-min.jpg 1x, ./images/portfolio8-tab-2x-min.jpg 2x, ./images/portfolio8-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio8-pc-1x-min.jpg 1x, ./images/portfolio8-pc-2x-min.jpg 2x, ./images/portfolio8-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio8-pc-1x-min.jpg" alt="photo-portfolio8">
+                    </picture>
                      
                      <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -299,16 +323,19 @@
                 <li class="portfolio__project-item">
                   <a class="portfolio__project-hover" href="">
                     <div class="portfolio__overlay">
-                      <img class="portfolio__img"
 
-                       srcset="
-                      ./images/img9.jpg     370w,
-                      ./images/img9-x2.jpg  740w,
-                      ./images/img9-x3.jpg 1110w"
-                    src="./images/img9.jpg"
-                    alt="набор фото"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                  />
+                    <picture class="portfolio__img">
+                      <source media="(max-width: 767px)"
+                        srcset="./images/portfolio9-mob-1x-min.jpg 1x, ./images/portfolio9-mob-2x-min.jpg 2x, ./images/portfolio9-mob-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/portfolio9-tab-1x-min.jpg 1x, ./images/portfolio9-tab-2x-min.jpg 2x, ./images/portfolio9-tab-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/portfolio9-pc-1x-min.jpg 1x, ./images/portfolio9-pc-2x-min.jpg 2x, ./images/portfolio9-pc-3x-min.jpg 3x"
+                        type="image/jpeg" />
+                      <img src="./images/portfolio9-pc-1x-min.jpg" alt="photo-portfolio9">
+                    </picture>
 
                      <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                       позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
