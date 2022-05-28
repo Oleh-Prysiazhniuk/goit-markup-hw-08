@@ -1,11 +1,11 @@
 :root {
-  --main-text: #000000;
-  --second-text: #907e82;
-  --white-text: #ffffff;
-  --title-text: #d41443;
-  --accent-color: #ffa5ba;
-  --main-bg: #fff5f6;
-  --second-bg: #ffb8ca;
+  --primary-text-color: #212121;
+  --secondory-text-color: #757575;
+  --text-title-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
 }
 
 img {
@@ -45,37 +45,25 @@ ol {
 }
 
 .container {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 480px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid tomato; */
 }
-.container--hero {
-  padding: 0;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding: 0 36px;
-  }
-  .container--header {
-    padding: 0;
-  }
-  .container--hero {
-    padding: 0;
+    width: 768px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1280px;
-    padding: 0 112px;
-  }
-  .container--header {
-    padding-right: 46px;
-    padding-left: 46px;
-  }
-  .container--hero {
-    padding-left: 77px;
-    padding-right: 97px;
+    width: 1200px;
   }
 }
 
@@ -473,333 +461,6 @@ ol {
 }
 .button:hover, .button:focus {
   background-color: #178ae7;
-}
-
-.section--hero {
-  background-color: var(--second-bg);
-}
-
-.section__pre-title {
-  font-family: "Titan One", cursive;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.15;
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .section__pre-title {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section__pre-title {
-    font-size: 30px;
-    letter-spacing: 0.04em;
-  }
-}
-
-.section__title {
-  font-family: "Titan One", cursive;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--title-text);
-}
-@media screen and (min-width: 768px) {
-  .section__title {
-    font-size: 48px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section__title {
-    font-size: 58px;
-    letter-spacing: 0.06em;
-  }
-}
-
-.section-products {
-  background-color: #ffffff;
-  padding-top: 120px;
-  padding-bottom: 100px;
-}
-@media screen and (min-width: 768px) {
-  .section-products {
-    padding-bottom: 110px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section-products {
-    padding-bottom: 120px;
-  }
-}
-
-.section-products__text {
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.section-product__title {
-  text-align: center;
-  margin-bottom: 145px;
-}
-@media screen and (min-width: 768px) {
-  .section-product__title {
-    margin-bottom: 155px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section-product__title {
-    margin-bottom: 270px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .products {
-    display: flex;
-    align-items: baseline;
-    margin: -10px;
-  }
-}
-
-.products__item {
-  position: relative;
-  padding: 165px 40px 40px 40px;
-  text-align: center;
-  border-radius: 24px;
-}
-@media screen and (max-width: 767px) {
-  .products__item {
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .products__item:not(:last-child) {
-    margin-bottom: 130px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .products__item {
-    width: calc((100% - 60px) / 3);
-    margin: 10px;
-    padding: 155px 15px 40px 15px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products__item {
-    padding: 170px 44px 50px 44px;
-  }
-}
-
-.product__item--pink {
-  background-color: #ffb8ca;
-}
-
-.product__item--yellow {
-  background-color: #f0d1a5;
-}
-
-.product__item--green {
-  background-color: #c2e297;
-}
-
-.products__title {
-  margin-bottom: 30px;
-  font-family: "Titan One";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--white-text);
-}
-@media screen and (min-width: 1280px) {
-  .products__title {
-    font-size: 30px;
-    line-height: 1.13;
-  }
-}
-
-.products__title::before {
-  position: absolute;
-  top: -110px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  content: "";
-  width: 249px;
-  height: 252px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
-  .products__title::before {
-    top: -105px;
-    width: 220px;
-    height: 226px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products__title::before {
-    top: -200px;
-    width: 335px;
-    height: 335px;
-  }
-}
-
-.products__title--first::before {
-  background-image: url(/images/Igor-mob-1x-min.jpg);
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products__title--first::before {
-    background-image: url(/images/Igor-mob-2x-min.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .products__title--first::before {
-    background-image: url(/images/Igor-tab-1x-min.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .products__title--first::before {
-    background-image: url(/images/Igor-tab-2x-min.jpg);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products__title--first::before {
-    background-image: url(/images/Igor-pc-1x-min.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .products__title--first::before {
-    background-image: url(/images/Igor-pc-2x-min.jpg);
-  }
-}
-
-.products__title--second::before {
-  background-image: url(/images/Kolya-mob-1x-min.jpg);
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products__title--second::before {
-    background-image: url(/images/Kolya-mob-2x-min.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .products__title--second::before {
-    background-image: url(/images/Kolya-tab-1x-min.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .products__title--second::before {
-    background-image: url(/images/Kolya-tab-2x-min.jpg);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products__title--second::before {
-    background-image: url(/images/Kolya-pc-1x-min.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .products__title--second::before {
-    background-image: url(/images/Kolya-pc-2x-min.jpg);
-  }
-}
-
-.products__title--third::before {
-  background-image: url(/images/Olga-mob-1x-min.jpg);
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products__title--third::before {
-    background-image: url(/images/Olga-mob-2x-min.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .products__title--third::before {
-    background-image: url(/images/Olga-tab-1x-min.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .products__title--third::before {
-    background-image: url(/images/Olga-tab-2x-min.jpg);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products__title--third::before {
-    background-image: url(/images/Olga-pc-1x-min.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .products__title--third::before {
-    background-image: url(/images/Olga-pc-2x-min.jpg);
-  }
-}
-
-.products__title::after {
-  display: block;
-  content: "";
-  width: 26px;
-  height: 6px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(/images/dots.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.products__text {
-  margin-bottom: 30px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--white-text);
-}
-@media screen and (min-width: 768px) {
-  .products__text {
-    margin-bottom: 40px;
-    line-height: 1.76;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products__text {
-    margin-bottom: 60px;
-    font-size: 16px;
-  }
-}
-
-.products__button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background-color: #ffffff;
-  background-image: url(../images/btn-arrow/arrow-right.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products__button {
-    background-image: url(../images/btn-arrow/arrow-right@2x.png);
-  }
-}
-
-.top {
-  background-image: url(../images/btn-arrow/arrow-top.png);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .top {
-    background-image: url(../images/btn-arrow/arrow-top@2x.png);
-  }
 }
 
 .section {
